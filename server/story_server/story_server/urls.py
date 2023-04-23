@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+import story_teller
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('getstory/', story_teller.get_story_from_premise),
+    
 ]
